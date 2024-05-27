@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    
     margin: 0;
     display: flex;
     justify-content: center;
@@ -11,11 +11,15 @@ body {
     color: #ffffff;
     padding: 20px;
     box-sizing: border-box;
+    background-image: url('heart.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .container {
     padding-top: 20px;
-    background: #483D8B;
+    background: #3864bcee;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -84,7 +88,7 @@ input[type="submit"] {
     font-size: 25px;
     font-weight: bold;
     color: #fff;
-    background-color: #064b9f;
+    background-color: #063d80;
     border: none;
     border-radius: 5px;
     cursor: pointer;
