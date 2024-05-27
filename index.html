@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados Médicos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Dados Médicos</h1>
+        <form action="#" method="post">
+            <label for="age">Idade (em anos):</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="sex">Sexo:</label>
+            <select id="sex" name="sex" required>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+            </select>
+
+            <label for="chest_pain">Tipo de Dor no Peito:</label>
+            <select id="chest_pain" name="chest_pain" required>
+                <option value="1">Tipo 1</option>
+                <option value="2">Tipo 2</option>
+                <option value="3">Tipo 3</option>
+                <option value="4">Tipo 4</option>
+            </select>
+
+            <label for="resting_bp">Pressão Arterial em Repouso (mm Hg):</label>
+            <input type="number" id="resting_bp" name="resting_bp" required>
+
+            <label for="cholesterol">Colesterol Sérico (mg/dl):</label>
+            <input type="number" id="cholesterol" name="cholesterol" required>
+
+            <label for="fasting_bs">Açúcar no Sangue em Jejum (0 ou 1 > 120 mg/dl):</label>
+            <select id="fasting_bs" name="fasting_bs" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+
+            <label for="resting_ecg">Eletrocardiograma em Repouso:</label>
+            <select id="resting_ecg" name="resting_ecg" required>
+                <option value="0">Resultado 0</option>
+                <option value="1">Resultado 1</option>
+                <option value="2">Resultado 2</option>
+            </select>
+
+            <label for="max_hr">Frequência Cardíaca Máxima Alcançada:</label>
+            <input type="number" id="max_hr" name="max_hr" required>
+
+            <label for="exercise_angina">Angina Induzida por Exercício (0 ou 1):</label>
+            <select id="exercise_angina" name="exercise_angina" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+
+            <label for="oldpeak">Oldpeak (depressão):</label>
+            <input type="number" id="oldpeak" name="oldpeak" step="0.1" required>
+
+            <label for="st_slope">Inclinação do Segmento ST do Pico de Exercício:</label>
+            <select id="st_slope" name="st_slope" required>
+                <option value="0">Inclinação 0</option>
+                <option value="1">Inclinação 1</option>
+                <option value="2">Inclinação 2</option>
+            </select>
+
+            <label for="class">Classe (1 = Doença Cardíaca, 0 = Normal):</label>
+            <select id="class" name="class" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
+
