@@ -86,6 +86,11 @@ select:focus {
 }
 
 input[type="submit"] {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: normal;
+    vertical-align: middle;
     padding: 15px;
     font-size: 25px;
     font-weight: bold;

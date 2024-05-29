@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Dados Médicos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <div class="container">
         <h1><strong>Avaliação de Doença Cardíaca</strong></h1>
-        <form action="#" method="post">
+        <form action="/prever" method="post">
             <label for="age">Idade (em anos):</label>
             <input type="number" id="age" name="age" required>
 
             <label for="sex">Sexo:</label>
             <select id="sex" name="sex" required>
-                <option value="male">Masculino</option>
-                <option value="female">Feminino</option>
+                <option value="0">Feminino</option>
+                <option value="1">Masculino</option>
             </select>
 
             <label for="chest_pain">Tipo de Dor no Peito:</label>
@@ -39,13 +39,6 @@
                 <option value="1">1</option>
             </select>
 
-            <label for="resting_ecg">Eletrocardiograma em Repouso:</label>
-            <select id="resting_ecg" name="resting_ecg" required>
-                <option value="0">Resultado 0</option>
-                <option value="1">Resultado 1</option>
-                <option value="2">Resultado 2</option>
-            </select>
-
             <label for="max_hr">Frequência Cardíaca Máxima Alcançada:</label>
             <input type="number" id="max_hr" name="max_hr" required>
 
@@ -55,10 +48,7 @@
                 <option value="1">1</option>
             </select>
 
-            <label for="oldpeak">Oldpeak (depressão):</label>
-            <input type="number" id="oldpeak" name="oldpeak" step="0.1" required>
-
-            <label for="st_slope">Inclinação do Segmento ST do Pico de Exercício:</label>
+            <label for="st_slope">Inclinação dos batimentos cardíacos durante o pico do exercício:</label>
             <select id="st_slope" name="st_slope" required>
                 <option value="0">Inclinação 0</option>
                 <option value="1">Inclinação 1</option>
