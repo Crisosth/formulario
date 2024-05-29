@@ -40,6 +40,30 @@ body {
     position: center;
 }
 
+.cont {
+    flex-direction: column;
+    padding-top: 56.25%;
+    background: #3864bcee;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    width: 500px;
+    margin: 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
+    padding-top: 50px;
+    height: 400px;
+    top: 50px;
+    bottom:50px;
+    left: 0px;
+    position: relative;
+    justify-content: center;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         padding-top: 20px; /* Reduz o espaço na parte superior em telas menores */
@@ -112,6 +136,35 @@ input[type="submit"]:active {
     transform: translateY(0);
 }
 
+#back {
+    line-height: normal;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    background-color: #85afdc; /* Cor de fundo do link */
+    color: #fff; /* Cor do texto do link */
+    padding: 20px 40px; /* Adicione algum espaço interno */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 25px; /* Tamanho da fonte */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+#back:hover {
+    background-color: #042a53; /* Altera a cor de fundo ao passar o mouse */
+  }
+
+#result {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+}
 /* Media Queries */
 @media (max-width: 768px) {
     .container {
@@ -158,4 +211,5 @@ input[type="submit"]:active {
     input[type="submit"] {
         padding: 10px;
     }
+   
 }
