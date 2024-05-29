@@ -19,40 +19,50 @@
                 <option value="1">Masculino</option>
             </select>
 
-            <label for="chest_pain">Tipo de Dor no Peito:</label>
-            <select id="chest_pain" name="chest_pain" required>
-                <option value="1">Tipo 1</option>
-                <option value="2">Tipo 2</option>
-                <option value="3">Tipo 3</option>
-                <option value="4">Tipo 4</option>
+            <label for="chest pain">Tipo de Dor no Peito:</label>
+            <select id="chest pain" name="chest pain" required>
+                <option value="1">Angina típica</option>
+                <option value="2">Angina atípica</option>
+                <option value="3">Dor não anginal</option>
+                <option value="4">Assintomático</option>
             </select>
 
-            <label for="resting_bp">Pressão Arterial em Repouso (mm Hg):</label>
-            <input type="number" id="resting_bp" name="resting_bp" required>
+            <label for="resting bp s">Pressão Arterial em Repouso (mm Hg):</label>
+            <input type="number" id="resting bp s" name="resting bp s" required>
 
             <label for="cholesterol">Colesterol Sérico (mg/dl):</label>
             <input type="number" id="cholesterol" name="cholesterol" required>
 
-            <label for="fasting_bs">Açúcar no Sangue em Jejum (0 ou 1 > 120 mg/dl):</label>
-            <select id="fasting_bs" name="fasting_bs" required>
-                <option value="0">0</option>
-                <option value="1">1</option>
+            <label for="fasting blood sugar">Açúcar no Sangue em Jejum (0 ou 1 > 120 mg/dl):</label>
+            <select id="fasting blood sugar" name="fasting blood sugar" required>
+                <option value="0">Menor que 120mg/dl</option>
+                <option value="1">Igual ou maior que 120mg/dl</option>
             </select>
 
-            <label for="max_hr">Frequência Cardíaca Máxima Alcançada:</label>
-            <input type="number" id="max_hr" name="max_hr" required>
-
-            <label for="exercise_angina">Angina Induzida por Exercício (0 ou 1):</label>
-            <select id="exercise_angina" name="exercise_angina" required>
-                <option value="0">0</option>
-                <option value="1">1</option>
+            <label for="resting ecg">Eletrocardiograma em Repouso:</label>
+            <select id="resting ecg" name="resting ecg" required>
+                <option value="0">normal</option>
+                <option value="1">onda anormal</option>
+                <option value="2">provável ou definitiva insuficiência ventricular esquerda </option>
             </select>
 
-            <label for="st_slope">Inclinação dos batimentos cardíacos durante o pico do exercício:</label>
-            <select id="st_slope" name="st_slope" required>
-                <option value="0">Inclinação 0</option>
-                <option value="1">Inclinação 1</option>
-                <option value="2">Inclinação 2</option>
+            <label for="max heart rate">Frequência Cardíaca Máxima Alcançada:</label>
+            <input type="number" id="max heart rate" name="max heart rate" required>
+
+            <label for="exercise angina">Angina Induzida por Exercício (0 ou 1):</label>
+            <select id="exercise angina" name="exercise angina" required>
+                <option value="0">não</option>
+                <option value="1">sim</option>
+            </select>
+
+            <label for="oldpeak">Depressão ST:</label>
+            <input type="number" id="oldpeak" name="oldpeak" required>
+
+            <label for="ST slope">Inclinação dos batimentos cardíacos durante o pico do exercício:</label>
+            <select id="ST slope" name="ST slope" required>
+                <option value="0">Sobe</option>
+                <option value="1">Permanece na mesma média</option>
+                <option value="2">Desce</option>
             </select>
             <input type="submit" value="Enviar">
         </form>
